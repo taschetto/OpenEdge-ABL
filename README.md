@@ -1,3 +1,7 @@
+# UNMAINTAINED REPO
+
+I have not used and will probably never use ABL again, so I don't have an interest in maintaining this repo. If someone wants to maintain this for Sublime Text, then please hit me up for ownership (elpapapollo@gmail.com). Thanks.
+
 OpenEdge Advanced Business Language (ABL) Syntax for Sublime Text 2
 ===================================================================
 
