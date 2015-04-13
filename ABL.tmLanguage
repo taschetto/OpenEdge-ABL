@@ -70,7 +70,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)(\b(no-undo|no-box|no-labels|no-lock|no-error|format|colon|label|initial|side-labels|width|primary|use-index)\b|@)</string>
+			<string>(?i)(\b(function|return|returns|avail|input|output|like|def|var|new|log|char|int|dec|no-undo|no-box|no-labels|no-lock|no-error|format|colon|label|initial|side-labels|width|primary|use-index)\b|@)</string>
 			<key>name</key>
 			<string>keyword.option.source.abl</string>
 		</dict>
