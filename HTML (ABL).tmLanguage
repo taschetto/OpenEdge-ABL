@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>w</string>
+		<string>html</string>
+	</array>
+	<key>name</key>
+	<string>HTML (ABL)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>(\s)*&lt;script language="SpeedScript"&gt;(\s)*</string>
+			<key>end</key>
+			<string>(\s)*&lt;/script&gt;(\s)*</string>
+			<key>name</key>
+			<string>source.abl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.abl</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.html.abl</string>
+	<key>uuid</key>
+	<string>043f4cd2-a6ba-49fc-b269-0fbf41acb7e5</string>
+</dict>
+</plist>

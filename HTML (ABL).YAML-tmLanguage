@@ -1,0 +1,14 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: HTML (ABL)
+scopeName: text.html.abl
+fileTypes: ["w", "html"]
+uuid: 043f4cd2-a6ba-49fc-b269-0fbf41acb7e5
+
+patterns:
+  - begin: (\s)*<script language="SpeedScript">(\s)*
+    end: (\s)*</script>(\s)*
+    name: source.abl
+    patterns:
+      - include: source.abl
+  - include: text.html.basic
