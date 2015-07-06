@@ -30,13 +30,13 @@ patterns:
     match: (?i)\b(true|false|yes|no(?!-))\b
 
   - name: keyword.operator.source.abl
-    match: (?i)(\b(or|and|not|is)\b|(=|\+| - |/|<|>|,))
+    match: (?i)(\b(or|and|not|is)\b|(=|\+| - |/|<|>|,|\.))
 
   - name: keyword.option.source.abl
-    match: (?i)(\b(return|function|return(s)?|input|output|like|new|no-undo|no-box|no-labels|no-lock|no-error|format|colon|label|initial|side-labels|width|primary|use-index)\b|@)
+    match: (?i)(\b(return|function|return(s)?|forward|input|output|like|new|no-undo|no-box|no-labels|(share|no|exclusive)-lock|no-error|format|colon|label|init(ial)?|side-labels|width|primary|use-index)\b|@)
 
   - name: keyword.statement.source.abl
-    match: (?i)\b(disp(lay)?|delete|create|update|assign|import( unformatted)?|input\s+(from|close)|with|skip)\b
+    match: (?i)\b(disp(lay)?|for|do|repeat|delete|create|update|empty|assign|import( unformatted)?|input\s+(from|close)|with|skip)\b
 
   - name: keyword.type.source.abl
     match: (?i)\b(as|for(?!\s+(each|first|last)))\b
@@ -47,16 +47,16 @@ patterns:
         '2': { name: storage.type.source.abl }
 
   - name: keyword.control.source.abl
-    match: (?i)(\b(if|avail(able)?|down|where|else( if)?|for\s+(each|first|last)|do while|repeat(\s+while)?|find( first|last)?|then( do( transaction)?)?|next|page|quit)\b|(?<!-)(\bend\b(?!\s+procedure)))
+    match: (?i)(\b(if|avail(able)?|down|where|else( if)?|each|first|last|while|find( first|last)?|then( do( transaction)?)?|next|page|quit)\b|(?<!-)(\bend\b(?!\s+procedure)))
 
   - name: storage.type.define.abl
     match: (?i)\b(def(ine)?\s+(((new\s+)?shared\s+)?(var(iable)?|stream|buffer)|((input|input-output|output)\s+param(eter)?)|temp-table|query)|form)\b
 
   - name: storage.type.source.abl
-    match: (?i)\b(?<!&)(char(acter)?|(?<!-)handle|dataset-handle|dataset|field|(?<!-)index|log(ical)?|int(eger|64)?|dec(imal)?|stream|frame [a-z]+)(?!\s*\()\b
+    match: (?i)\b(?<!&)(char(acter)?|(?<!-)handle|dataset(-handle)?|field|(?<!-)index|log(ical)?|int(eger|64)?|dec(imal)?|stream|temp-table|frame [a-z]+)(?!\s*\()\b
 
   - name: storage.type.function.abl
-    match: (?i)(end (procedure))
+    match: (?i)(end (procedure|function))
 
   - name: support.function.abl
     match: (?i)(\b[a-z][a-z0-9_-]*?\b\s*)(?=\s*\(.*?\))
@@ -64,7 +64,7 @@ patterns:
       '1': { name: support.function.source.abl }
 
   - name: support.function.abl
-    match: (?i)\b(run) ([a-z][a-z0-9_-]*?)\b(\s*\(.*?\))?
+    match: (?i)\b(run) ([a-z][a-z0-9_-]*)\b(\s*\(.*?\))?
     captures:
       '1': { name: keyword.statement.source.abl }
       '2': { name: support.function.source.abl }
