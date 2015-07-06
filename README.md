@@ -1,8 +1,4 @@
-# UNMAINTAINED REPO
-
-I have not used and will probably never use ABL again, so I don't have an interest in maintaining this repo. If someone wants to maintain this for Sublime Text, then please hit me up for ownership (elpapapollo@gmail.com). Thanks.
-
-OpenEdge Advanced Business Language (ABL) Syntax for Sublime Text 2
+OpenEdge Advanced Business Language (ABL) Syntax for Sublime Text
 ===================================================================
 
 This is my first tmLanguage for Sublime Text 2, so this is still a very rough work in progress.
@@ -13,6 +9,7 @@ License
 All files in this package are licensed under the MIT license.
 
 Copyright (c) 2012 Jeremy Fairbank <elpapapollo@gmail.com>.
+Copyright (c) 2015 Guilherme Taschetto <gtaschetto@gmail.com>.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
