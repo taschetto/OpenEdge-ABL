@@ -9,7 +9,7 @@
 		<string>i</string>
 	</array>
 	<key>name</key>
-	<string>Progress ABL</string>
+	<string>OpenEdge ABL</string>
 	<key>patterns</key>
 	<array>
 		<dict>

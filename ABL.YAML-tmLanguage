@@ -1,6 +1,6 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
-name: Progress ABL
+name: OpenEdge ABL
 scopeName: source.abl
 fileTypes: ["w", "p", "i"]
 uuid: 075bb86e-03ea-4fea-bac0-e11b9dc73e03
