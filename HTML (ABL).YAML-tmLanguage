@@ -11,9 +11,4 @@ patterns:
     name: source.abl
     patterns:
       - include: source.abl
-  - begin: (.)*\`
-    end: \`(.)*
-    name: source.abl
-    patterns:
-      - include: source.abl
   - include: text.html.basic
