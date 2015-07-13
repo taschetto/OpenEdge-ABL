@@ -69,13 +69,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)(\b(return|function|return(s)?|forward|input|output|like|new|no-undo|no-box|no-labels|(share|no|exclusive)-lock|no-error|format|colon|label|init(ial)?|side-labels|width|primary|use-index)\b|@)</string>
+			<string>(?i)(\b(return|function|return(s)?|forward|input|output(?!\s+(to|close)|like|new|no-undo|no-box|no-labels|(share|no|exclusive)-lock|no-error|format|colon|label|init(ial)?|side-labels|width|primary|use-index)\b|@)</string>
 			<key>name</key>
 			<string>keyword.option.source.abl</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(disp(lay)?|for|do|repeat|delete|create|update|empty|assign|import( unformatted)?|input\s+(from|close)|with|skip)\b</string>
+			<string>(?i)\b(disp(lay)?|for|do|repeat|delete|create|update|empty|assign|put|import( unformatted)?|input\s+(from|close)|with|skip)\b</string>
 			<key>name</key>
 			<string>keyword.statement.source.abl</string>
 		</dict>
